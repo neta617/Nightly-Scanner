@@ -43,8 +43,10 @@ def clear():
 clear()
 menu()
 
+target = input(f"{Fore.WHITE}    Hostname: ")
+
 while True:
-    target = input(f"{Fore.WHITE}    Hostname: ")
+
 
     port_scan_range = [20, 21, 22, 23, 25, 53, 80, 110, 143, 443, 445, 1433, 3306, 3389, 8080]
 
@@ -56,5 +58,5 @@ while True:
     time.sleep(5)
     clear()
     menu()
-    
+
     target = input(f"{Fore.WHITE}    Hostname: ")
